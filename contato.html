@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VirtVortexIT</title>
+    <link rel="stylesheet" href="head/style.css">
+    <link rel="stylesheet" href="foot/style.css">
+
+    <style>
+        .nomep {
+            border-style: double;
+            border-radius: 30px;
+            font-size: 80%;
+            outline: none;
+        }
+
+        form {
+            background-color: #202020;
+            width: 35%;
+            border-radius: 40px;
+            border-style: inherit;
+            color: aliceblue;
+            margin-left: 5%;
+        }
+
+        .tamanho {
+            font-size: 130%;
+        }
+
+        .op {
+            border-style: double;
+            border-radius: 30px;
+            font-size: 80%;
+            margin-left: 10%;
+        }
+
+        textarea {
+            border-radius: 20px;
+            border-style: double;
+            resize: none;
+            outline: none;
+        }
+
+        .btn {
+            font-size: 100%;
+        }
+
+        #coco {
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="ingles/index.html"><img id="brasil" src="img/brasil.png" alt="bandeira do brasil"></a>
+        <table id="tbl_header">
+            <tbody>
+                <tr>
+                    <td><img id="logo" src="img/logo_binário.png" alt="logo da VirtVortexIT"></td>
+                    <td id="espaço"></td>
+                    <td>
+                        <ul>
+                            <li><a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                            </li>
+                            <li><a href="empresa.html">EMPRESA &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a></li>
+                            <li><a href="serviços.html">SERVIÇOS &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a></li>
+                            <li><a class="pagecolor" href="contato.html">CONTATO &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <form id="coco" method="GET" action="joaoslx1@gmail.com">
+        <center>
+            <h3>Preencha seus dados</h3>
+            <hr>
+            <h3>Dados Pessoais</h3>
+            <hr>
+            <table class="tamanho">
+                <tbody>
+                    <tr>
+                        <td>Nome compreto: </td>
+                        <td><input class="nomep" type="text" placeholder="Digite seu nome" id="nome"></td>
+                    </tr>
+                    <tr>
+                        <td>Login: </td>
+                        <td><input class="nomep" type="text" placeholder="Digite seu nome de usuário" id="login"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail: </td>
+                        <td><input class="nomep" type="email" placeholder="Digite seu email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Senha: </td>
+                        <td><input class="nomep" type="password" placeholder="Digite sua senha" id="senha"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo: </td>
+                        <td><input name="sexo" type="radio" value="F" checked="F">&nbsp;&nbsp;F
+                            <input name="sexo" type="radio" value="M">&nbsp;&nbsp;M
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Estado onde mora: </td>
+                        <td><select class="op" name="estados" id="uf">
+                                <option>sp</option>
+                                <option>pr</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Cursos extracurriculares</h3>
+            <table>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="infob">Informática Básica</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="gest">Gestão de Pessoas</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="conf">Administração de Conflitos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="conf">Ciência da computação
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Deixe seu comentário</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><textarea cols="30" rows="10" placeholder="escreva seu comentario aqui"
+                                style="margin: 0px; width: 535px; height: 156px;"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><input class="btn" type="button" value="Enviar"
+                                onclick="Verefica()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><input class="btn" type="reset" value="Limpar" onclick="Limpar()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </form>
+    <footer>
+        <div id="direitos">todos os direitos reservados ©</div>
+    </footer>
+</body>
+
+</html>
