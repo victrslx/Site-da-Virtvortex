@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VirtVortexIT</title>
+    <link rel="stylesheet" href="../head/style.css">
+    <link rel="stylesheet" href="../foot/style.css">
+
+    <style>
+        #frm_contato {
+
+            width: 35%;
+            border-style: inherit;
+            color: rgb(101, 101, 101);
+            margin-left: 20%;
+            margin-top: 20%;
+            margin-bottom: 7%;
+        }
+
+        .tamanho {
+            font-size: 130%;
+        }
+
+        #txtarea_message {
+            border-radius: 6px;
+            border-style: double;
+            resize: none;
+            padding: 20px 20px;
+            border: none;
+            background-color: rgba(200, 200, 255, 0.5);
+            outline-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .teste {
+            border-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            border-style: groove;
+            margin-top: -18%;
+            outline: none;
+        }
+
+        h1 {
+            margin-top: -8%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-top: 11%;
+            margin-left: 11.4%;
+        }
+
+        h3 {
+            font-size: 40px;
+            margin-top: -4.9%;
+            margin-left: 70.9%;
+        }
+
+        .lbl_nome {
+            font-size: 130%;
+
+        }
+
+        .txt_msg {
+            border: none;
+            background-color: rgba(200, 200, 255, 0.5);
+            width: 100%;
+            padding-left: 3px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            outline-color: rgba(0, 0, 0, 0.3);
+        }
+
+        #ajuste-top {
+            margin-left: 50%;
+            margin-top: -50%;
+            font-size: 145%;
+        }
+
+        .info {
+            width: 50%;
+            margin-left: -25%;
+            margin-top: -50%;
+        }
+
+        #titulo {
+            margin-left: -22%;
+        }
+
+        .subtitulos {
+            color: black;
+            font-style: bold;
+            font-size: 130%;
+        }
+
+        .maisinfo {
+            margin-top: -68%;
+            margin-left: 145%;
+            width: 85%;
+        }
+
+        .estado {
+            font-size: 108%;
+            outline-color: rgba(0, 0, 0, 0.3);
+            color: rgb(100, 100, 100);
+        }
+
+        #enviar {
+            margin-top: 17%;
+            margin-left: -25%;
+        }
+
+        #mapa {
+            margin-left: -0.48%;
+
+        }
+
+        .crop {
+            overflow: hidden;
+            width: 1800px;
+            height: 240px;
+            margin-top: 5%;
+            margin-left: -5%;
+        }
+
+        .rodape {
+            margin-top: -1%;
+        }
+
+        hr {
+            width: 68px;
+            border-top: 3px solid #616873;
+        }
+
+        #respeito {
+            font-size: 350%;
+            margin-top: -4.9%;
+        }
+
+        #explo {
+            font-size: 350%;
+            margin-top: -10.4%;
+        }
+
+        #btnEnviar {
+            font-size: 140%;
+            border-radius: 4px;
+            color: rgb(36, 36, 36);
+            background-color: rgba(200, 200, 255, 0.5);
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <script>
+        function veri() {
+            if (document.getElementById("nome").value == "") {
+                window.alert("Preencha o nome!");
+                document.getElementById("nome").focus();
+            }
+            else if (document.getElementById("E-mail").value == "") {
+                window.alert("Preencha o E-mail!");
+                document.getElementById("E-mail").focus();
+            }
+            else if (document.getElementById("Telefone").value == "") {
+                window.alert("Preencha o Telefone!");
+                document.getElementById("Telefone").focus();
+            }
+            else {
+                window.alert("Dados enviados com sucesso!!!");
+            }
+        }
+        function limpar() {
+            document.getElementById("nome").focus();
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="ingles/index.html"><img id="brasil" src="img/brasil.png" alt="bandeira do brasil"></a>
+        <table id="tbl_header">
+            <tbody>
+                <tr>
+                    <td><img id="logo" src="img/logo_binário.png" alt="logo da VirtVortexIT"></td>
+                    <td id="espaço"></td>
+                    <td>
+                        <ul>
+                            <li><a href="index.html">HOME &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                            </li>
+                            <li><a href="empresa.html">EMPRESA &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a></li>
+                            <li><a href="serviços.html">SERVIÇOS &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a></li>
+                            <li><a class="pagecolor" href="contato.html">CONTATO &nbsp;&nbsp;&nbsp;&nbsp;
+                                </a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <div class="crop"><img src="img/banner2.jpg" alt="foto de são Paulo"></div>
+    <h1>Contate a gente</h1>
+    <h1 id="respeito">________</h1>
+    <h1 id="explo">_____</h1>
+    <h2>Envie uma mensagem</h2>
+    <h3>Mais detalhes</h3>
+    <form id="frm_contato" method="GET" action="virtvortexit@gmail.com">
+
+        <table class="info">
+            <tbody>
+                <tr class="teste">
+                    <td class="teste"><label for="contact-name" class="lbl_nome">Nome</label></td>
+                </tr>
+                <tr>
+                    <td class="teste"><input id="nome" type="text" name="name" placeholder="Digite seu nome"
+                            class="txt_msg"></td>
+                </tr>
+                <tr>
+                    <td class="teste"><label for="email" class="lbl_nome">E-mail</label></td>
+                </tr>
+                <tr>
+                    <td class="teste"><input class="txt_msg" id="E-mail" type="text" name="E-mail"
+                            placeholder="Exemplo@gmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="teste"><label for="telefone" class="lbl_telefone">Telefone</label></td>
+                </tr>
+
+                <tr>
+                    <td class="teste"><input class="txt_msg" id="Telefone" type="text" name="telefone"
+                            placeholder="(xx) xxxxx-xxxx">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="teste"><label for="contact-name" class="lbl_estado">Estado</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paráiba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="PR">Paraná</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="SP" selected>São Paulo</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </td>
+                </tr>
+        </table>
+
+        <table id="ajuste-top">
+            <tbody>
+                <tr>
+                    <td><label for="contact-message" class="lbl_message">Sua menssagem</label></td>
+                <tr></tr>
+                <td><textarea name="message" id="txtarea_message" cols="40" rows="20"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="maisinfo">
+            <tr>
+                <td class="subtitulos">Endereço</td>
+            </tr>
+            <tr />
+            <tr>
+                <td>R. Guaipá, 678 - Vila Leopoldina, São Paulo</td>
+            </tr>
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr>
+                <td class="subtitulos">Estamos abertos:</td>
+            </tr>
+            <tr />
+            <tr>
+                <td>De segunda à sexta, das 08:30 às 17:00</td>
+            </tr>
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr>
+                <td class="subtitulos">Telefone</td>
+            </tr>
+            <tr />
+            <tr>
+                <td>1111111111111</td>
+            </tr>
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr />
+            <tr>
+                <td class="subtitulos">E-mail</td>
+            </tr>
+            <tr />
+            <tr>
+                <td>Virtvortexit@gmail.com</td>
+            </tr>
+        </table>
+        <table id="enviar">
+            <tr>
+                <td><input type="button" onclick="veri()" value="Enviar" id="btnEnviar"></td>
+            </tr>
+        </table>
+    </form>
+    <iframe id="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8727.232539628494!2d-46.72988429038541!3d-23.520746532469612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d3806777%3A0x8d03885c01c45d8a!2sR.%20Guaip%C3%A1%2C%20678%20-%20Vila%20Leopoldina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002675-031!5e0!3m2!1sen!2sbr!4v1606353063036!5m2!1sen!2sbr"
+        width="1724" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    <footer class="rodape">
+        <div id="direitos">todos os direitos reservados ©</div>
+    </footer>
+</body>
+
+</html>

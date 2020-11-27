@@ -5,7 +5,84 @@
 	<meta charset="UTF-8">
 	<title>VirtVortexIT</title>
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.flip-card {
+			background-color: transparent;
+			width: 245px;
+			height: 300px;
+			perspective: 1000px;
+		}
 
+		.flip-card-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.6s;
+			transform-style: preserve-3d;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.flip-card:hover .flip-card-inner {
+			transform: rotateY(180deg);
+		}
+
+		.flip-card-front,
+		.flip-card-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		.flip-card-front {
+			background-color: #bbb;
+			color: black;
+		}
+
+		.flip-card-back {
+			background-color: rgb(210, 30, 30);
+			color: white;
+			transform: rotateY(180deg);
+		}
+
+		.txtcard {
+			margin-top: 20%;
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+
+		.cargo {
+			font-size: 130%;
+		}
+
+		#underline {
+			margin-top: -4.1%;
+			color: rgb(210, 30, 30);
+		}
+
+		#fakecompany {
+			width: 100%;
+			margin-left: -7%;
+			margin-top: 2%;
+		}
+
+		.tblsobre {
+			width: 55%;
+			border-bottom-width: 3px;
+			border-color: rgba(0, 0, 0, 0);
+			border-style: groove;
+		}
+
+		.txtsobre {
+			font-size: 118%;
+		}
+
+		.link {
+			color: red;
+		}
+	</style>
 </head>
 
 <body>
@@ -35,43 +112,113 @@
 	</header>
 	<img id="banner" src="img/banner.jpg" alt="cara mexendo no computador">
 	</br></br></br>
-	<table class="tblmembros">
-		<tr>
-			<td> <img class="membrosft" src="img/teste.jpg"> </td>
-			<td class="espaçoMem"> </td>
-			<td> <img class="membrosft" src="img/teste.jpg"> </td>
-			<td class="espaçoMem"> </td>
-			<td> <img class="membrosft" src="img/teste.jpg"> </td>
-			<td class="espaçoMem"> </td>
-			<td> <img class="membrosft" src="img/teste.jpg"> </td>
-			<td class="espaçoMem"> </td>
-			<td> <img class="membrosft" src="img/teste.jpg"> </td>
-			<td class="espaçoMem"> </td>
-		</tr>
-		<tr class="tableColor">
-			<td class="espaçoNm"> João Victor </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Iago Rian </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Gabriel de Souza </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Rodrigo Souza </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Karen Amanda </td>
-		</tr>
-		<tr class="tableColor">
-			<td class="espaçoNm"> Front-End </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Front-End </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Back-End </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Back-End </td>
-			<td class="espaçoMem"> </td>
-			<td class="espaçoNm"> Banco de Dados </td>
-		</tr>
+	<center>
+		<h1 />Sobre nós
+		<h1 id="underline">_____</h1>
+		<table class="tblsobre">
+			<tbody>
+				<tr class="tblsobre">
+					<td class="tblsobre"><img src="img/fake company.jpg" id="fakecompany"></td>
+					<td class="txtsobre">O que começou como um projeto para estudos, a VirtVortex, fundada no ano de
+						2020, por 5 estudantes de desenvolvimento de sistemas
+						acabou se tornando uma conhecida empresa dentro do ramo, assegurando à seus clientes qualidade e
+						compromisso. <a class="link" href="empresa.html">Saiba mais</a> <br /><br /><br /><br /><br />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<br />
+		<br />
+		<br />
+		<table class="tblcard">
+			<tbody>
+				<tr>
+					<td>
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/teste.jpg" alt="Avatar" style="height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1 class="txtcard">João Victor</h1>
+									<p class="txtcard cargo">Front-end</p>
+									<p class="txtcard">Formado pela Etec Profº Basilidies de Godoy em desenvolvimento de
+										sistemas</p>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td />
+					<td>
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/teste.jpg" alt="Avatar" style="height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1 class="txtcard">Iago Rian</h1>
+									<p class="txtcard cargo">Front-end</p>
+									<p class="txtcard">Formado pela Etec Profº Basilidies de Godoy em desenvolvimento de
+										sistemas</p>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td />
+					<td>
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/teste.jpg" alt="Avatar" style="height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1 class="txtcard">Gabriel Souza</h1>
+									<p class="txtcard cargo">Back-end</p>
+									<p class="txtcard">Formado pela Etec Profº Basilidies de Godoy em desenvolvimento de
+										sistemas</p>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td />
+					<td>
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/teste.jpg" alt="Avatar" style="height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1 class="txtcard">Rodrigo Souza</h1>
+									<p class="txtcard cargo">Back-end</p>
+									<p class="txtcard">Formado pela Etec Profº Basilidies de Godoy em desenvolvimento de
+										sistemas</p>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td />
+					<td>
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/teste.jpg" alt="Avatar" style="height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1 class="txtcard">Karen Amanda</h1>
+									<p class="txtcard cargo">Banco de Dados</p>
+									<p class="txtcard">Formado pela Etec Profº Basilidies de Godoy em desenvolvimento de
+										sistemas</p>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td />
 
-	</table>
+				</tr>
+			</tbody>
+		</table>
+	</center>
 
 	<footer>
 		<div id="direitos">todos os direitos reservados</div>
